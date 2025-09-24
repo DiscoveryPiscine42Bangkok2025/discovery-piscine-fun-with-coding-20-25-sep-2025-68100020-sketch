@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-and-portfolio - Kittipong Maneechai</title>
+    <style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: Trebuchet MS, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: linear-gradient(to top, #000000, #01ACBD);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 3%;
+            box-sizing: border-box;
+            z-index: 1000;
+        }
+
+        .header-logo {
+            height: 50px;
+        }
+
+        .header-nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .header-nav li {
+            margin-right: 15px;
+        }
+
+        .header-nav a {
+            color: #e5e5e5;
+            text-decoration: none;
+            font-size: 14px;
+            transition: color 0.3s ease;
+        }
+
+        .header-nav a:hover {
+            color: #b3b3b3;
+        }
+
+        .banner {
+            position: relative;
+            height: 56.25vw;
+            max-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+            padding: 0 6%;
+        }
+
+        .banner-content {
+            margin-bottom: 12px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+
+        .banner-title {
+            font-size: 4.5vw;
+            margin: 0;
+        }
+
+        .banner-description {
+            font-size: 1.2vw;
+            max-width: 100%;
+        }
+
+        .banner-buttons .play-button, .banner-buttons .more-info-button {
+            padding: 5px 19px;
+            border: none;
+            border-radius: 20px;
+            font-size: 17px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .movie-row {
+            padding: 20px 0;
+            padding-left: 4%;
+        }
+
+        .movie-row h2 {
+            font-size: 2vw;
+            margin-bottom: 10px;
+        }
+
+        .row-posters {
+            display: flex;
+            overflow-x: scroll;
+            padding-bottom: 20px;
+        }
+
+        .row-posters::-webkit-scrollbar {
+            display: none;
+        }
+
+        .row-poster {
+            width: 250px;
+            object-fit: contain;
+            margin-right: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+        }
+
+        .row-poster:hover {
+            transform: scale(1.08);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="https://cdn.discordapp.com/attachments/1111274944953843803/1420090206568190074/download.png?ex=68d42191&is=68d2d011&hm=f1b754e6ef8e04c2649d35b3f0f7c7d70c5f23db05ac3ebd181dcaa3a7d3185f&" alt="Logo" class="header-logo">
+        <nav class="header-nav">
+            <ul>
+                <li><a href="profile1.html">Natnicha</a></li>
+                <li><a href="profile2.html">Jomkhwan</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner" style="background-image: url('background.webp');">
+            <img src="font page.webp" alt="profile" width="400" height="350" class="row-poster">
+
+            <div class="banner-content">
+                <h1 class="banner-title">Jomkhwan Lawang</h1>
+                <p class="banner-description">Nickname : Nissarin</p>
+                <p class="banner-description">Date of Birth : 24  June 2006 &nbsp; Age : 19</p>
+                <p class="banner-description">Nationality : Thai</p>
+                <p class="banner-description">Education : King Mongkut's Institute of Technology Ladkrabang</p>
+                <p class="banner-description">Abilities : draw, dance</p>
+                <p class="banner-description">Hobby : sleep, ride a bike</p>
+            </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>This is me.</h2>
+            <div class="row-posters">
+                <img src="me1.webp" alt="Poster 1" class="row-poster">
+                <img src="me2.webp" alt="Poster 2" class="row-poster">
+                <img src="me3.webp" alt="Poster 3" class="row-poster">
+                <img src="me4.webp" alt="Poster 4" class="row-poster">
+            </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>My Activity</h2>
+            <div class="row-posters">
+                <img src="activity1.webp" alt="Activity 1" class="row-poster">
+                <img src="activity2.webp" alt="Activity 2" class="row-poster">
+                <img src="activity3.webp" alt="Activity 3" class="row-poster">
+                <img src="activity4.webp" alt="Activity 4" class="row-poster">
+            </div>
+        </div>
+
+        <div class="movie-row">
+            <h2>My Certificates</h2>
+            <div class="row-posters">
+                <img src="certification1.webp" alt="Certificate 1" class="row-poster">
+                <img src="cerfication2.webp" alt="Certificate 2" class="row-poster">
+                <img src="cerfication3.webp" alt="Certificate 3" class="row-poster">
+                <img src="cerfication4.webp" alt="Certificate 4" class="row-poster">
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
